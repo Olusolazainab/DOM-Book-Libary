@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Libary</title>
+    <script src="./app.js"></script> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div id="wrapper">
+       <header>
+           <div id="page-banner">
+               <h1 class="title">Bookorama</h1>
+               <p>Books for Zeela</p>
+            <form id="search-books">
+                <input type="text" placeholder="Search books..."/>
+            </form>
+           </div>
+       </header>
+       <div id="book-list">
+           <h2 class="title">Books to Read</h2>
+            <ul>
+                <li>
+                    <span class="name">Name of the Wind</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">The Wise Men's Fear</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Kafta on the Shore</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">The Master and the Margarita</span>
+                    <span class="delete">delete</span>
+                </li>
+                
+            </ul>
+       </div>
+       <form id="add-book">
+           <input type="checkbox" id="hide"/>
+           <label for="hide">Hide all books</label>
+           <input type="text" placeholder="Add a book..."/>
+           <button>Add</button> 
+       </form>
+       <div id="tabbed-content">
+           <ul class="tabs">
+               <li data-target="#about" class="active">About</li>
+               <li data-target="#contact">Contact</li>
+
+           </ul>
+           <div class="panel active" id="about">
+               <p>Content for about tab...</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maiores tenetur velit ea, commodi eligendi perferendis quo vel, magni assumenda dolore eius quisquam, temporibus et esse inventore iste cumque eos.</p>
+            </div>
+            <div class="panel" id="contact">
+                <p>Content for Contact tab...</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur numquam culpa doloremque! Minima, assumenda commodi! Qui culpa labore esse placeat. Sapiente explicabo ea distinctio qui deleniti, praesentium architecto facere delectus!</p>
+
+
+            </div>
+
+       </div>
+   </div>
+
+</body>
+</html>
